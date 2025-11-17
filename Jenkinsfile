@@ -24,11 +24,11 @@ pipeline{
                     ], 
                         credentialsId: 'Nexus', 
                         groupId: 'onlinebookstore', 
-                        nexusUrl: '43.205.235.141:8081', 
+                        nexusUrl: '3.90.222.109:8081', 
                         nexusVersion: 'nexus3', 
                         protocol: 'http', 
                         repository: 'onlinebookstores', 
-                        version: '0.0.1-SNAPSHOT'
+                        version: '3.81.1-01-SNAPSHOT'
             }
         }
         stage('deploy'){
