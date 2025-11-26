@@ -21,13 +21,13 @@ pipeline{
                         file: '/var/lib/jenkins/workspace/webapplication/target/onlinebookstore-0.0.1-SNAPSHOT.war', 
                         type: 'war'
                         ]
-                    ], 
+                    ]
                         credentialsId: 'Nexus', 
                         groupId: 'onlinebookstore', 
-                        nexusUrl: '3.90.222.109:8081', 
+                        nexusUrl: '98.93.104.26:8081/', 
                         nexusVersion: 'nexus3', 
                         protocol: 'http', 
-                        repository: 'onlinebookstores', 
+                        repository: 'online-bookstorerepo', 
                         version: '3.81.1-01-SNAPSHOT'
             }
         }
@@ -37,7 +37,7 @@ pipeline{
                     tomcat9(
                         credentialsId: 'Tomcat', 
                         path: '', 
-                        url: 'http://3.110.172.100:8090/')
+                        url: 'http://54.237.215.186:8080/')
                         ], 
                         contextPath: null, 
                         war: '**/*.war'
